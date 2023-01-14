@@ -1,0 +1,43 @@
+/* UTILITIES */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	min-height: 100vh;
+	font-family: 'Work Sans', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+
+/* NAVBAR */
+
+/* HERO SECTION */
+
+/* QUICK LIST SECTION */
+
+/* FEATURES SECTION */
+
+/* FACTS SECTION */
+
+/* SPONSORS SECTION */
+
+/* FOOTER */
+
+/* ============= */
+/* MEDIA QUERIES */
+/* ============= */
+
+/* MEDIUM DEVICES */
+@media only screen and (max-width: 992px) {
+}
+
+/* SMALL DEVICES */
+@media only screen and (max-width: 576px) {
+}
