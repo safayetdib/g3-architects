@@ -204,6 +204,66 @@ footer {
 	font-size: 25px;
 }
 
+/* PORTFOLIO SECTION */
+.portfolio-section .section-title {
+	padding: 0 0 0 20px;
+	margin-bottom: 24px;
+	border-left: 6px solid var(--color-primary);
+}
+.menu-bar {
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.filters label {
+	color: var(--color-secondary-light);
+	margin-right: 10px;
+}
+.filters select,
+.search input {
+	font-size: 16px;
+	padding: 8px 10px;
+	border-radius: 8px;
+	outline: none;
+}
+.portfolio-gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+.portfolio-gallery a {
+	padding: 10px 10px 40px 10px;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	transition: all 0.3s ease-in;
+}
+.portfolio-gallery a:hover {
+	transform: scale(1.05);
+}
+.portfolio-gallery a img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 8px;
+}
+.portfolio-gallery a span {
+	color: var(--color-secondary-dark);
+	font-size: 18px;
+	margin: 5px 0;
+}
+.more-portfolio {
+	margin-top: 30px;
+	text-align: center;
+}
+.more-portfolio a {
+	color: var(--color-secondary-dark);
+}
+.more-portfolio a:hover {
+	color: var(--color-primary);
+	border-bottom: 1px solid var(--color-primary);
+}
+
+/* ------------------ */
+
 /* FACTS SECTION */
 .facts-section {
 	margin: 100px 0;
@@ -223,7 +283,6 @@ footer {
 	gap: 20px;
 }
 .fact-card {
-	/* width: 180px; */
 	width: 80%;
 	height: 100%;
 	padding: 20px;
@@ -232,7 +291,18 @@ footer {
 	border: 1px solid var(--color-primary);
 	border-radius: 8px;
 	text-align: center;
+	position: relative;
+	cursor: pointer;
 }
+.fact-card:hover {
+	animation: anime 2s infinite;
+}
+@keyframes anime {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 .fact-card h3 {
 	font-weight: 600;
 	font-size: 38px;
@@ -262,6 +332,12 @@ footer {
 }
 .sponsors-list li img {
 	width: 100%;
+	filter: grayscale(100%);
+	transition: all 0.5s;
+}
+.sponsors-list li img:hover {
+	filter: none;
+	transform: scale(1.3) rotate(360deg);
 }
 
 /* FOOTER */
@@ -334,6 +410,14 @@ footer {
 	}
 	.experience-card p {
 		font-size: 22px;
+	}
+	/* PORTFOLIO SECTION */
+	.filters select,
+	.search input {
+		font-size: 14px;
+	}
+	.portfolio-gallery {
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	/* FACTS SECTION */
@@ -410,6 +494,15 @@ footer {
 	}
 	.experience-card p {
 		font-size: 18px;
+	}
+
+	/* PORTFOLIO SECTION */
+	.menu-bar {
+		flex-direction: column-reverse;
+		gap: 20px;
+	}
+	.portfolio-gallery {
+		grid-template-columns: repeat(1, 1fr);
 	}
 
 	/* FACTS SECTION */
