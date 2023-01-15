@@ -4,7 +4,8 @@
 	--color-secondary-light: #727272;
 	--color-secondary-dark: #424242;
 	--color-neutral-dark: #131313;
-	--color-bg: #f3f3f3;
+	/* --color-bg: #f3f3f3; */
+	--color-bg: #ffff;
 	--color-bg-primary: #fff4e7;
 }
 
@@ -244,8 +245,37 @@ footer {
 }
 
 /* SPONSORS SECTION */
+.sponsors-section {
+	margin: 50px 0;
+}
+.sponsor-contents {
+	text-align: center;
+}
+.sponsor-contents .section-description {
+	width: 60%;
+	margin: 24px auto;
+}
+.sponsors-list {
+	margin-top: 50px;
+	justify-content: space-between;
+	gap: 50px;
+}
+.sponsors-list li img {
+	width: 100%;
+}
 
 /* FOOTER */
+.copyright-section {
+	margin: 100px 0;
+	padding: 40px 50px;
+	background-color: var(--color-bg-primary);
+	border-radius: 8px;
+}
+.copyright-text {
+	font-size: 20px;
+	color: var(--color-secondary-dark);
+	text-align: center;
+}
 
 /* ============= */
 /* MEDIA QUERIES */
@@ -314,6 +344,9 @@ footer {
 	/* SPONSORS SECTION */
 
 	/* FOOTER */
+	.copyright-text {
+		font-size: 16px;
+	}
 }
 
 /* SMALL DEVICES */
@@ -364,6 +397,9 @@ footer {
 	}
 
 	/* FEATURES SECTION */
+	.fact-contents {
+		text-align: center;
+	}
 	.experience-card {
 		padding: 22px 25px;
 		top: -50px;
@@ -385,6 +421,15 @@ footer {
 	}
 
 	/* SPONSORS SECTION */
+	.sponsor-contents .section-description {
+		width: 100%;
+	}
+	.sponsors-list {
+		flex-direction: column;
+	}
 
 	/* FOOTER */
+	.copyright-text {
+		font-size: 14px;
+	}
 }
